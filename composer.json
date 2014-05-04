@@ -1,5 +1,5 @@
 {
-    "name": "vdopool/sdk",
+    "name": "vdopool/payment",
     "require": {
         "guzzlehttp/guzzle": "~4.0"
     },
