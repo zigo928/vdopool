@@ -1,0 +1,19 @@
+{
+    "name": "vdopool/sdk",
+    "require": {
+        "guzzlehttp/guzzle": "~4.0"
+    },
+    "authors": [
+        {
+            "name": "gengzhiguo",
+            "email": "gengzhiguo@starschina.com"
+        }
+    ],
+    "minimum-stability": "dev",
+
+    "autoload": {
+        "psr-0": {
+            "Vdopool": "src/"
+        }
+    }
+}
