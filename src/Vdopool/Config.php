@@ -19,6 +19,6 @@ class Config
   public static $trade_url  = 'http://payment.211.100.56.140.xip.io/api/v1/trades';
 
   // 查询地址
-  public static $query_url  = '';
+  public static $query_url  = 'http://payment.211.100.56.140.xip.io/api/v1/trades/';
 }
 
