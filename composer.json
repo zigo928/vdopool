@@ -1,5 +1,6 @@
 {
-    "name": "vdopool/sdk",
+    "name": "vdopool/payment",
+    "type": "library",
     "require": {
         "guzzlehttp/guzzle": "~4.0"
     },
@@ -9,7 +10,6 @@
             "email": "gengzhiguo@starschina.com"
         }
     ],
-    "minimum-stability": "dev",
 
     "autoload": {
         "psr-0": {
