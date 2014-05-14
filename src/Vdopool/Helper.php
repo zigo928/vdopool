@@ -98,17 +98,7 @@ class Helper {
    **/
   public static function charEncode($text)
   {
-    $encodedText = "";
-    $j = strlen($text);
-    for ($i=0;$i<$j;$i++) {
-      $c = substr($text,$i,1);
-      if (!preg_match("/[A-Za-z0-9-_.~]/",$c)) {
-        $encodedText .= sprintf("%%%02X",ord($c));
-      } else {
-        $encodedText .= $c;
-      }
-    }
-    return $encodedText;
+    return urlencode($text);
   }
 
   /**
