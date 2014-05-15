@@ -47,10 +47,9 @@ class Service {
 
     $client = new \GuzzleHttp\Client;
 
-    $request = $client->get($url);
+    $response = $client->get($url);
 
     // Send the GET request
-    $response = $request->send();
     return $response->getBody();
   }
 }
