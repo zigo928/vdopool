@@ -147,7 +147,7 @@ class Helper {
     $hmacBase64 = base64_encode($hmac);
     // 5. Use the resulting value as the value of the Signature request parameter
     // (URL encoded as per step 1b)
-    return self::charEncode($hmacBase64);
+    return $hmacBase64;
   }
 
   /**
