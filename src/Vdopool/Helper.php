@@ -135,9 +135,9 @@ class Helper {
     //    your Secret Access Key as the key, and SHA256 as the hash algorithm.
     if (function_exists("hash_hmac")) {
       // 二进制
-      $hmac = hash_hmac("sha256",$stringToSign,$secretAccessKey,TRUE);
+      /* $hmac = hash_hmac("sha256",$stringToSign,$secretAccessKey,TRUE); */
       // 十六进制
-      /* $hmac = hash_hmac("sha256",$stringToSign,$secretAccessKey); */
+      $hmac = hash_hmac("sha256",$stringToSign,$secretAccessKey);
     } elseif(function_exists("mhash")) {
       $hmac = mhash(MHASH_SHA256,$stringToSign,$secretAccessKey);
     } else {
